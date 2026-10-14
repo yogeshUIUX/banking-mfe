@@ -1,0 +1,17 @@
+
+<header class="topbar">
+  <a class="brand" routerLink="/loans" aria-label="Northstar Banking home">
+    <span class="brand-mark" aria-hidden="true">N</span>
+    <span>Northstar <strong>Banking</strong></span>
+  </a>
+
+  <nav class="project-nav" aria-label="Banking projects">
+    <a routerLink="/loans" routerLinkActive="active" ariaCurrentWhenActive="page">Loans</a>
+    <a routerLink="/insurance" routerLinkActive="active" ariaCurrentWhenActive="page">Insurance</a>
+  </nav>
+
+</header>
+
+<main class="host-content">
+  <router-outlet></router-outlet>
+</main>

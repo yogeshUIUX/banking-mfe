@@ -1,0 +1,23 @@
+<div class="workspace">
+	<aside class="sidebar" aria-label="Loans navigation">
+		<div class="product-mark" aria-hidden="true">L</div>
+		<p class="eyebrow">LENDING</p>
+		<h1>Loans</h1>
+		<p class="sidebar-copy">Applications and portfolio activity.</p>
+
+		<nav class="side-nav" aria-label="Loans menu">
+			<a routerLink="/loans" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">
+				<span class="nav-symbol" aria-hidden="true">01</span>Overview
+			</a>
+			<a routerLink="/loans/loan-user" routerLinkActive="active" ariaCurrentWhenActive="page">
+				<span class="nav-symbol" aria-hidden="true">02</span>Applicants
+			</a>
+		</nav>
+
+		<div class="sidebar-foot"><span class="status-dot"></span> Lending operations</div>
+	</aside>
+
+	<main class="page-content">
+		<router-outlet></router-outlet>
+	</main>
+</div>

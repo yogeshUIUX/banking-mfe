@@ -1,0 +1,23 @@
+<div class="workspace">
+  <aside class="sidebar" aria-label="Insurance navigation">
+    <div class="product-mark" aria-hidden="true">I</div>
+    <p class="eyebrow">PROTECTION</p>
+    <h1>Insurance</h1>
+    <p class="sidebar-copy">Coverage and claims, together.</p>
+
+    <nav class="side-nav" aria-label="Insurance menu">
+      <a routerLink="/insurance" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">
+        <span class="nav-symbol" aria-hidden="true">01</span>Overview
+      </a>
+      <a routerLink="/insurance/Claim-List" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <span class="nav-symbol" aria-hidden="true">02</span>Claims
+      </a>
+    </nav>
+
+    <div class="sidebar-foot"><span class="status-dot"></span> All policies in one place</div>
+  </aside>
+
+  <main class="page-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
